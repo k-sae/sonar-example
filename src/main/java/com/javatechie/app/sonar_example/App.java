@@ -24,6 +24,24 @@ public class App {
 		}
 	}
 
+	public void m2(){
+		Object o = getData();
+		System.out.println(o.toString() == "string");
+	}
+
+	public void m3(){
+	}
+
+
+	public void m4(){
+		Object o = getData();
+		System.out.println(o.toString() == "string");
+	}
+
+	public boolean shouldBeEqual(int i, int j){
+		return i == j;
+	}
+
 	public Object getData() {
 		return null;
 	}
@@ -31,5 +49,6 @@ public class App {
 	public static void main(String[] args) {
 		App app = new App();
 		app.m1();
+		app.m2();
 	}
 }
